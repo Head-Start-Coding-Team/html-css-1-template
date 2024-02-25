@@ -3,6 +3,8 @@ tasks:
     init: python -m http.server 8000
   - name: Minimize Terminal
     command: gitpod-cli terminal minimize
+  - name: Hide Minimap
+    command: gitpod-cli settings set 'editor.minimap.enabled' false
 
 ports:
   - port: 8000
